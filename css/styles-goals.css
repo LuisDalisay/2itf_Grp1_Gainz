@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --linear-grad: linear-gradient(to right, #960019, #41424c);
+    --grad-clr1: #960019;
+    --grad-clr2: #41424c;
+}
+
+body {
+    height: 100vh;
+    background: url("../images/weight_bg.jpg") center / cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 850px;
+    height: 500px;
+    background-color: #FFF;
+    box-shadow: 25px 30px 55px #5557;
+    border-radius: 13px;
+    overflow: hidden;
+    background-color: #fffb;
+    backdrop-filter: blur(7px);
+}
+.text-center{
+    margin-top: 50px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form-label{
+    font-weight: 500;
+}
+.btn{
+    transition: 0.3s ease-in-out;
+}
+.btn-success:hover{
+    background-color: white;
+    color: green;
+    border: solid 1px green;
+}
+.btn-danger:hover{
+    background-color: white;
+    color: red;
+    border: solid 1px red;
+}
