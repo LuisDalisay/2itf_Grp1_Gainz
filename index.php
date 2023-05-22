@@ -94,7 +94,51 @@ if (isset($_POST['submit'])) {
                 <input type="submit" name="submit" value="login now" class="form-btn">
             </form>
         </div>
+        <div class="form-container sign-in-container">
+            <form action="" method="post">
+                <h1>Create Account</h1>
+                <?php
+                if (isset($error1)) {
+                    foreach ($error1 as $error1) {
+                        echo '<span class="error-msg">' . $error1 . '</span>';
+                    };
+                };
+                ?>
+                <div class="infield">
+                    <input type="text" name="name" required placeholder="enter your name">
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="email" name="email" required placeholder="enter your email">
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" name="password" required placeholder="enter your password">
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" name="cpassword" required placeholder="confirm your password">
+                    <label></label>
+                </div>
+                <input type="submit" name="register" value="register now" class="form-btn">
+            </form>
 
+        </div>
+        <div class="overlay-container" id="overlayCon">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Login your Gainz account to begin your journey</p>
+                    <button>Sign Up</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello Guest!</h1>
+                    <p>Come and join Gainz by creating an account today</p>
+                    <button>Sign In</button>
+                </div>
+            </div>
+            <button id="overlayBtn"></button>
+        </div>
     </div>
 
 
